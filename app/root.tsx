@@ -24,7 +24,7 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export const meta: Route.MetaFunction = () => [
-  { title: "DOMICOOP — Burn to Dominate" },
+  { title: "DOMICOOP — Born to Dominate" },
   {
     name: "description",
     content:
