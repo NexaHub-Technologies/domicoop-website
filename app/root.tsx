@@ -19,7 +19,16 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap",
+  },
+];
+
+export const meta: Route.MetaFunction = () => [
+  { title: "DOMICOOP — A cooperative is only as strong as its ledger" },
+  {
+    name: "description",
+    content:
+      "Dominion Co-operative is a thrift & credit society — members, contributions, loans and dividends, kept in balance and on the record.",
   },
 ];
 
@@ -29,6 +38,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#071431" />
         <Meta />
         <Links />
       </head>
@@ -62,11 +72,13 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
-      <h1>{message}</h1>
-      <p>{details}</p>
+    <main className="container mx-auto p-4 pt-16">
+      <h1 className="font-display text-4xl font-medium tracking-tight">
+        {message}
+      </h1>
+      <p className="mt-2 text-muted-foreground">{details}</p>
       {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
+        <pre className="w-full overflow-x-auto p-4">
           <code>{stack}</code>
         </pre>
       )}
