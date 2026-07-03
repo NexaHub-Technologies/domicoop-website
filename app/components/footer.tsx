@@ -37,9 +37,8 @@ export function Footer() {
           <div className="max-w-xs">
             <Logo onDark />
             <p className="mt-4 text-sm leading-relaxed text-white/55">
-              A cooperative is only as strong as its ledger. Dominion
-              Co-operative keeps its members&apos; savings in balance and on the
-              record.
+              Burn to Dominate. Dominion Co-operative keeps its members&apos;
+              savings in balance and on the record.
             </p>
             <StoreBadges className="mt-6" />
           </div>
@@ -68,7 +67,7 @@ export function Footer() {
         <div className="mt-14 flex flex-col gap-2 border-t border-white/10 pt-6 text-sm text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} Dominion Co-operative Society. All rights reserved.</p>
           <p className="font-display italic text-white/60">
-            Keeping an honest ledger.
+            Burn to Dominate.
           </p>
         </div>
       </div>

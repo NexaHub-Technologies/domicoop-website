@@ -15,7 +15,7 @@ import {
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "DOMICOOP — A cooperative is only as strong as its ledger" },
+    { title: "DOMICOOP — Burn to Dominate" },
     {
       name: "description",
       content:
@@ -56,7 +56,7 @@ function Hero() {
             DOMICOOP · Dominion Co-operative
           </Eyebrow>
           <h1 className="mt-4 max-w-xl font-display text-4xl font-medium leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            A cooperative is only as strong as its ledger.
+            Burn to Dominate.
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-white/70">
             Dominion Co-operative is a thrift &amp; credit society — members,
