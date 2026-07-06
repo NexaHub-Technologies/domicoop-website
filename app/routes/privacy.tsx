@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import type { Route } from "./+types/privacy";
 import { PageHeader } from "../components/ui";
 
@@ -24,11 +23,21 @@ export default function Privacy() {
       <article className="mx-auto max-w-3xl px-5 py-16 sm:px-6 sm:py-20">
         <div className="space-y-10 leading-relaxed text-muted-foreground">
           <Clause title="What we collect">
-            To run the society&apos;s ledger we collect your name, contact
-            details, member number and the records of your contributions, loans
-            and dividends. We collect only what the service needs — nothing
-            more.
+            To run the society&apos;s ledger we collect:
           </Clause>
+          <ul className="list-disc space-y-1 pl-6 mt-3">
+            <li>Your name, email address, phone number, and physical address</li>
+            <li>Member number</li>
+            <li>
+              Bank account details (bank name, account number, and bank code)
+            </li>
+            <li>Next-of-kin information (name and phone number)</li>
+            <li>Device push notification token (to send you alerts)</li>
+            <li>Records of your contributions, loans, and dividends</li>
+          </ul>
+          <p className="mt-3">
+            We collect only what the service needs — nothing more.
+          </p>
           <Clause title="How we use it">
             Your information is used to operate your membership of Dominion
             Co-operative: posting contributions, processing loan applications
@@ -42,14 +51,7 @@ export default function Privacy() {
           </Clause>
           <Clause title="How we protect it">
             Data is encrypted in transit, passwords are stored only as salted
-            hashes, and administrator access is role-based. See our{" "}
-            <Link
-              to="/security"
-              className="font-semibold text-[#2f6be0] underline-offset-4 hover:underline"
-            >
-              security page
-            </Link>{" "}
-            for detail.
+            hashes, and administrator access is role-based.
           </Clause>
           <Clause title="We don't sell your data">
             Your membership and financial records belong to you and to Dominion
