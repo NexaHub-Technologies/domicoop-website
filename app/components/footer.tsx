@@ -24,6 +24,7 @@ const COLUMNS: { heading: string; links: { label: string; to: string }[] }[] = [
     links: [
       { label: "Privacy", to: "/privacy" },
       { label: "Terms", to: "/terms" },
+      { label: "Delete Account", to: "/delete-account" },
     ],
   },
 ];

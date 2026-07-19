@@ -61,8 +61,15 @@ export default function Privacy() {
           </Clause>
           <Clause title="Your choices">
             You can request a copy of your data or ask that your account be
-            closed. Some records may be retained where the society&apos;s
-            bye-laws or the law requires it.
+            closed. See{" "}
+            <a
+              href="/delete-account"
+              className="font-semibold text-[#2f6be0] underline-offset-4 hover:underline"
+            >
+              how to request account deletion
+            </a>
+            . Some records may be retained where the society&apos;s bye-laws
+            or the law requires it.
           </Clause>
           <Clause title="Contact">
             Questions about this policy? Reach us at{" "}
